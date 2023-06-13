@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+    background-color: #ec9706;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+
+/* homepage */
+.home {
+  /* display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: initial; */
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+  }
+  .workout-details {
+    background: #fff;
+    border-radius: 4px;
+    margin: 20px 5px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  }
+  .workout-details h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #ec9706;
+  }
+  .workout-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  .workout-details span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    padding: 6px;
+    border-radius: 50%;
+    color: #333;
+  }
+
+  /* new workout form */
+label, input {
+  display: block;
 }
+form{
+  margin-right: 20px;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background-color: #ec9706;
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid red;
+  color: red;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .workout-details h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #ec9706;
+  }
+  .workout-details p {
+    margin: 0;
+    font-size: 0.7em;
+    color: #555;
+  }
+
+  .home{
+    gap: 30px;
+  }
+}
+
+
