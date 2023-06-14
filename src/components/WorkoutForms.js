@@ -13,7 +13,7 @@ function WorkoutForm() {
 
         const workout = {title, load, reps}
 
-        const response = await fetch('https://trackntrain.onrender.com/api/workouts',{
+        const response = await fetch('/workouts',{
             method: 'POST',
             body: JSON.stringify(workout),
             headers:{
