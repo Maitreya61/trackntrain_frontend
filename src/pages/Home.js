@@ -12,7 +12,7 @@ const Home = () => {
 
     useEffect(()=>{
        const fetchWorkouts = async () =>{
-        const response = await fetch("/workouts")
+        const response = await fetch("https://trackntrain.onrender.com/api/workouts")
         const json = await response.json()
 
         if(response.ok){
