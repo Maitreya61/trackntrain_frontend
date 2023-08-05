@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:4000/api",
+  "proxy": "https://trackntrain-backend.vercel.app/api",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
