@@ -13,7 +13,7 @@ function WorkoutForm() {
 
         const workout = {title, load, reps}
 
-        const response = await fetch('/workouts',{
+        const response = await fetch('https://trackntrain-backend.vercel.app/api/workouts',{
             method: 'POST',
             body: JSON.stringify(workout),
             headers:{

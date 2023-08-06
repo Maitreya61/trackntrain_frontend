@@ -5,7 +5,7 @@ const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutContext()
 
   const handleClick = async () => {
-    const response = await fetch('/workouts/' + workout._id, {
+    const response = await fetch('https://trackntrain-backend.vercel.app/api/workouts/' + workout._id, {
       method: 'DELETE'
     })
     const json = await response.json()
