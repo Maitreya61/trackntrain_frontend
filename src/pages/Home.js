@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch('/workouts')
+      const response = await fetch('https://trackntrain-backend.vercel.app/api/workouts')
       const json = await response.json()
 
       if (response.ok) {
